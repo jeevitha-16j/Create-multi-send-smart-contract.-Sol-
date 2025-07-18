@@ -69,6 +69,7 @@ This is the heart of our EtherSplitter!
 (Note: The provided code snippet is incomplete. A full EtherSplitter would include a loop to iterate through the recipients array and send amountPerRecipient to each one, handling potential transfer failures and emitting the TransferSuccess or TransferFailed events.)
 
 🚀 Ready to Deploy?
+
 To unleash your EtherSplitter on a blockchain, you'll need a Solidity compiler and a deployment environment (like Remix IDE, Hardhat, Truffle, or Foundry).
  * Save: Save the code as EtherSplitter.sol.
  * Compile: Use your chosen environment to compile the contract.
@@ -81,6 +82,7 @@ Once deployed, you can interact with the splitEther function:
 
 
 💡 What's Next? (Ideas for Your Blockchain Journey)
+
 This EtherSplitter is a great start! Here are some ideas to expand its capabilities and your understanding:
  * Implement the transfer loop: Add the code to actually send Ether to each recipient and handle potential failures gracefully.
  * Gas optimization: Explore ways to make the transfers more gas-efficient, especially for a large number of recipients.
