@@ -1,6 +1,6 @@
 @@ -0,0 +1,29 @@
 
- pragma solidity ^0.8.20;
+ pragma solidity^0.8.20;
 
 
 
@@ -26,18 +26,7 @@ recipients.length;
 
   require(msg.value > 0, No Ether sent");
  
-
-
-  uint amount Per Recipient = msg.
-
-value / totalRecipients;
+   uint amount Per Recipient = msg.value / totalRecipients;
 
    require (amount Per Recipient > 0
-
-
-
-4G
-
-23
-
-"Amount too small");
+4G23"Amount too small");
