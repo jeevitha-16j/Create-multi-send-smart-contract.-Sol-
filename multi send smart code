@@ -1,0 +1,43 @@
+@@ -0,0 +1,29 @@
+
+1 +pragma solidity ^0.8.20;
+
+2 +
+
+3 +contract EtherSplitter {
+
+4 + event EtherDistributed (address indexed sender, uint totalAmount, uint recipients);
+
+5+ event TransferSuccess (address recipient, uint amount);
+
+6+ event TransferFailed (address recipient, uint amount);
+
+7+
+
+8+ // Payable function to split Ether among recipients
+
+9+ function splitEther (address[] calldata recipients) external payable {
+
+10 + uint totalRecipients =
+
+recipients.length;
+
+11 + require(totalRecipients > 0, No recipients");
+
+12 + require(msg.value > 0, No Ether sent");
+
+13 +
+
+14 + uint amount Per Recipient = msg.
+
+value / totalRecipients;
+
+15 + require (amount Per Recipient > 0
+
+16 +
+
+4G
+
+23
+
+"Amount too small");
